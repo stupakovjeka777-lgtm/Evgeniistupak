@@ -96,7 +96,8 @@ for i,r in enumerate(rows,1): r["rank"]=i
 fields=["rank","nisha_id","tovar","pokupatel","chek_ocenka","marzha_ocenka_rub","chastota",
         "sezonnost","konkurenciya","avito_potencial","wb_ozon","logistika","pod_zakaz",
         "komissiya","risk","b_bez_zakupki","b_zashchita_ot_MP","b_marzha","b_chek","b_skorost","SCORE"]
-with open("PRODUCT_MATRIX.csv","w",encoding="utf-8",newline="") as f:
+out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "PRODUCT_MATRIX.csv")
+with open(out,"w",encoding="utf-8",newline="") as f:
     w=csv.DictWriter(f,fieldnames=fields,delimiter=";"); w.writeheader()
     for r in rows: w.writerow({k:r[k] for k in fields})
 
