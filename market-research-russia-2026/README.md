@@ -12,7 +12,10 @@
 
 | Если нужно | Открыть |
 |---|---|
-| **ЭТАП 2: решение по товарам** | [`11_SOURCING/FINAL_PRODUCT_DECISION.md`](11_SOURCING/FINAL_PRODUCT_DECISION.md) |
+| **TOP-10 товаров для перепродажи** | [`12_PRODUCT_EXPLORATION/TOP_10_RESALE_PRODUCTS.md`](12_PRODUCT_EXPLORATION/TOP_10_RESALE_PRODUCTS.md) |
+| Почему модель была скорректирована | [`12_PRODUCT_EXPLORATION/MODEL_CORRECTION.md`](12_PRODUCT_EXPLORATION/MODEL_CORRECTION.md) |
+| Весь пул: 225 SKU с оценками | [`12_PRODUCT_EXPLORATION/SKU_UNIVERSE_SCORED.csv`](12_PRODUCT_EXPLORATION/SKU_UNIVERSE_SCORED.csv) |
+| Этап 2: решение по оборудованию | [`11_SOURCING/FINAL_PRODUCT_DECISION.md`](11_SOURCING/FINAL_PRODUCT_DECISION.md) |
 | **Список поставщиков для обзвона** | [`11_SOURCING/STAGE_B_SUPPLIERS.csv`](11_SOURCING/STAGE_B_SUPPLIERS.csv) |
 | Подходит ли Авито каждому товару | [`11_SOURCING/CHANNEL_FIT_BY_PRODUCT.md`](11_SOURCING/CHANNEL_FIT_BY_PRODUCT.md) |
 | **ИТОГ этапа 1: проверка бизнес-модели** | [`09_FINAL_REPORT/CHANNEL_CUSTOMER_REALITY_CHECK.md`](09_FINAL_REPORT/CHANNEL_CUSTOMER_REALITY_CHECK.md) |
@@ -177,6 +180,7 @@
 | `09_FINAL_REPORT/` | Итоговый отчёт, план действий, что не делать, самопроверка | Готово |
 | `10_SOURCES/` | Реестр источников S1–S58 с оценкой надёжности | Готово |
 | `11_SOURCING/` | **Этап 2:** Channel Fit по товарам, быстрый и глубокий сорсинг, landed cost, юнит-экономика, пять корзин решения | Готово |
+| `12_PRODUCT_EXPLORATION/` | **Товарный exploration:** 225 SKU в 19 категориях, Product Fit, TOP-10 чистой перепродажи, watchlist сервисных моделей | Готово |
 | `DATA_VALIDATION/` | **Этап 1.5:** валидация S8, аудит скоринга, новые оси, сценарии весов, валидированный шортлист | Готово |
 | `DEMAND_VALIDATION/` | **Этап 1.6:** протоколы B2C/B2B, доказательства спроса из 8 сигналов, decision matrix, GO/NO GO | Готово |
 | `03_DATA_COLLECTION/CUSTOMER_DISCOVERY/` | **Единый протокол ТОП-6:** 11 вопросов, рандомизированный план на 70 контактов (6 ниш × 10 + E18 × 6 + резерв 4) | **К исполнению** |
