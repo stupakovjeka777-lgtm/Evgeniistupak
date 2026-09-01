@@ -17,6 +17,7 @@
 | Очередь на проверку по нишам | [`09_FINAL_REPORT/TOP_6_REALITY_CHECK.md`](09_FINAL_REPORT/TOP_6_REALITY_CHECK.md) |
 | **Аудит полноты генерации (ред. 2)** | [`02_NICHE_UNIVERSE/DOMAIN_COVERAGE_AUDIT.md`](02_NICHE_UNIVERSE/DOMAIN_COVERAGE_AUDIT.md) |
 | Вся вселенная ниш: 148 направлений | [`02_NICHE_UNIVERSE/NICHE_UNIVERSE_MASTER.csv`](02_NICHE_UNIVERSE/NICHE_UNIVERSE_MASTER.csv) |
+| **Статус вселенной: UNIVERSE FROZEN** | [`02_NICHE_UNIVERSE/UNIVERSE_FROZEN.md`](02_NICHE_UNIVERSE/UNIVERSE_FROZEN.md) |
 | Капитальная модель N097 | [`09_FINAL_REPORT/N097_CAPITAL_MODEL.md`](09_FINAL_REPORT/N097_CAPITAL_MODEL.md) |
 | Портфель по контурам | [`09_FINAL_REPORT/INDEPENDENT_PORTFOLIO.md`](09_FINAL_REPORT/INDEPENDENT_PORTFOLIO.md) |
 | Проверка на предвзятость | [`09_FINAL_REPORT/BIAS_CHECK.md`](09_FINAL_REPORT/BIAS_CHECK.md) |
@@ -213,7 +214,8 @@
    `02_NICHE_UNIVERSE/build_pets_expansion.py`, `build_thin_domains.py`, `build_audit_v2.py`, `build_stability_v2.py`.
 8. **UNIVERSE FROZEN.** Вселенная ниш зафиксирована на 148 направлениях.
    Новые ниши в текущий раунд не добавляются: расширение списка после старта
-   обзвона обесценивает сами разговоры.
+   обзвона обесценивает сами разговоры. Условия и порядок снятия —
+   [`02_NICHE_UNIVERSE/UNIVERSE_FROZEN.md`](02_NICHE_UNIVERSE/UNIVERSE_FROZEN.md).
 
 ## Формат файлов
 
