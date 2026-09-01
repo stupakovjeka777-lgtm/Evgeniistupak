@@ -44,12 +44,12 @@ CARDS={
 
 # баллы для прошедших фильтр, порядок O; + жёлтые флаги
 SC={
-"P01":([9,7,6,6,7,7,7,7,5,7],[],"Габаритные столы и ванны МП обслуживает плохо; расходка (косметика, ножи, насадки) даёт повтор; база салонов измерена"),
+"P01":([9,7,6,6,7,7,7,7,5,7],[],"Габаритные столы и ванны МП обслуживает плохо, расходка (косметика, ножи, насадки) даёт повтор, база салонов измерена"),
 "P03":([10,7,4,4,5,3,5,7,5,8],[],"Под заказ без закупки, но чек низкий и спрос отложенный - лежанку можно не покупать"),
 "P04":([10,9,6,6,7,5,5,5,3,7],["YF-2"],"Габарит и изготовление под размер, но клиентов мало и сезон весна-осень"),
-"P05":([9,5,4,4,5,5,7,7,7,8],[],"Компактный товар, МП рядом; выигрыш только в специализации"),
+"P05":([9,5,4,4,5,5,7,7,7,8],[],"Компактный товар, МП рядом — выигрыш только в специализации"),
 "P10":([9,6,4,4,7,5,7,7,7,7],[],"Узкий платёжеспособный сегмент, но чек невысокий"),
-"P11":([10,10,8,8,9,5,3,5,3,6],["YF-2"],"Габарит и комплектная продажа под площадку, поле почти пустое; но клиентов мало и сезон"),
+"P11":([10,10,8,8,9,5,3,5,3,6],["YF-2"],"Габарит и комплектная продажа под площадку, поле почти пустое, но клиентов мало и сезон"),
 "P12":([9,9,4,6,10,5,5,3,3,6],[],"Поле пустое, но приюты платят мало и медленно, часто через бюджет и пожертвования"),
 }
 
@@ -57,15 +57,17 @@ rows=[]
 for pid,(name,client,check,why,flt) in CARDS.items():
     if flt:
         rows.append(dict(id=pid,nisha=name,tip_klienta=client,chek=check,opisanie=why,
-            status="ОТСЕЯНА",kod=flt[0],prichina=flt[1],score="",yf="",kommentariy=""))
+            status="ОТСЕЯНА",kod=flt[0],prichina=flt[1],score="",yf="",kommentariy="",
+            **{k:"" for k in O}))
     else:
         vals,yf,note=SC[pid]
         raw=sum(vals[i]*W[k] for i,k in enumerate(O))
         pen=sum(YF[f] for f in yf)
         rows.append(dict(id=pid,nisha=name,tip_klienta=client,chek=check,opisanie=why,
-            status="ПРОШЛА",kod="",prichina="",score=round(raw-pen,2),yf=",".join(yf),kommentariy=note))
+            status="ПРОШЛА",kod="",prichina="",score=round(raw-pen,2),yf=",".join(yf),kommentariy=note,
+            **{k:vals[i] for i,k in enumerate(O)}))
 
-fields=["id","nisha","tip_klienta","chek","opisanie","status","kod","prichina","score","yf","kommentariy"]
+fields=["id","nisha","tip_klienta","chek","opisanie","status","kod","prichina","score","yf"]+O+["kommentariy"]
 with open(os.path.join(BASE,'PETS_RETAIL_EXPANSION.csv'),'w',encoding='utf-8',newline='') as f:
     w=csv.DictWriter(f,fieldnames=fields,delimiter=';');w.writeheader()
     for r in rows: w.writerow(r)
