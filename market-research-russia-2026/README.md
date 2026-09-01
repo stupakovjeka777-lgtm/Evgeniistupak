@@ -14,6 +14,7 @@
 |---|---|
 | **ИТОГ: проверка бизнес-модели** | [`09_FINAL_REPORT/CHANNEL_CUSTOMER_REALITY_CHECK.md`](09_FINAL_REPORT/CHANNEL_CUSTOMER_REALITY_CHECK.md) |
 | **План обзвона 70 контактов** | [`03_DATA_COLLECTION/CUSTOMER_DISCOVERY/CHANNEL_INTERVIEW_SCRIPT.md`](03_DATA_COLLECTION/CUSTOMER_DISCOVERY/CHANNEL_INTERVIEW_SCRIPT.md) |
+| Состав выборки и обоснование квот | [`03_DATA_COLLECTION/CUSTOMER_DISCOVERY/SAMPLING_PLAN_70.md`](03_DATA_COLLECTION/CUSTOMER_DISCOVERY/SAMPLING_PLAN_70.md) |
 | Очередь на проверку по нишам | [`09_FINAL_REPORT/TOP_6_REALITY_CHECK.md`](09_FINAL_REPORT/TOP_6_REALITY_CHECK.md) |
 | **Аудит полноты генерации (ред. 2)** | [`02_NICHE_UNIVERSE/DOMAIN_COVERAGE_AUDIT.md`](02_NICHE_UNIVERSE/DOMAIN_COVERAGE_AUDIT.md) |
 | Вся вселенная ниш: 148 направлений | [`02_NICHE_UNIVERSE/NICHE_UNIVERSE_MASTER.csv`](02_NICHE_UNIVERSE/NICHE_UNIVERSE_MASTER.csv) |
@@ -174,7 +175,7 @@
 | `10_SOURCES/` | Реестр источников S1–S48 с оценкой надёжности | Готово |
 | `DATA_VALIDATION/` | **Этап 1.5:** валидация S8, аудит скоринга, новые оси, сценарии весов, валидированный шортлист | Готово |
 | `DEMAND_VALIDATION/` | **Этап 1.6:** протоколы B2C/B2B, доказательства спроса из 8 сигналов, decision matrix, GO/NO GO | Готово |
-| `03_DATA_COLLECTION/CUSTOMER_DISCOVERY/` | **Единый протокол ТОП-6:** 11 вопросов, трекер на 70 контактов | **К исполнению** |
+| `03_DATA_COLLECTION/CUSTOMER_DISCOVERY/` | **Единый протокол ТОП-6:** 11 вопросов, рандомизированный план на 70 контактов (6 ниш × 10 + E18 × 6 + резерв 4) | **К исполнению** |
 | `_TEMPLATES/` | Карточка конкурента, интервью, юнит-экономика, ценовая карта, лог недели | — |
 
 ---
